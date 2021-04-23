@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/martnxdo/public_html/
-    - /bin/cp -R * $DEPLOYPATH
