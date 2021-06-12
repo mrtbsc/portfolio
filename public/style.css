@@ -116,15 +116,20 @@ nav {
   margin-bottom: -10px;
 }
 
-#intro {
+.message {
   background-color: #a9d18e;
   margin: 0.6rem;
   letter-spacing: 1px;
 }
 
-#intro p {
+.message p {
   width: 100%;
   font-size: 0.75rem;
+}
+
+.message.fix-top-margin {
+  margin-top: -80px;
+  margin-bottom: 0;
 }
 
 #greeting {
@@ -142,7 +147,7 @@ h2#projects-divider {
 }
 
 #main-footer {
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 #year {
@@ -220,7 +225,7 @@ h2#projects-divider {
     margin-bottom: 0;
   }
 
-  #intro p {
+  .message p {
     /* width: 75%; */
     font-size: 1.1rem;
   }
@@ -232,9 +237,13 @@ h2#projects-divider {
 }
 
 @media (min-width: 531px) {
-  #intro p {
+  .message p {
     width: 75%;
     font-size: 1.4rem;
+  }
+
+  .message.fix-top-margin {
+    margin-top: -50px;
   }
 
   #cards_landscape_wrap-2 {
@@ -252,13 +261,13 @@ h2#projects-divider {
 }
 
 @media (min-width: 990px) {
-  #intro p {
+  .message p {
     width: 50%;
   }
 }
 
 @media (min-width: 1220px) {
-  #intro p {
+  .message p {
     width: 40%;
   }
 }

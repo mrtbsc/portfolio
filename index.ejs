@@ -44,8 +44,9 @@
         </div>
     </nav>
 
-    <!------------ INTRO -------------->
-    <section id="intro" class="pt-1 pb-3 py-sm-5 rounded m-sm-0">
+    <!------------ INTRO MESSAGE -------------->
+
+    <section id="intro" class="message pt-1 pb-3 py-sm-5 rounded m-sm-0">
         <div class="container-fluid">
             <p class="m-auto text-center">
                 <span id="greeting">Hello!</span> I am an industrial engineer and a selftaught <span class="text-white">developer</span>, who is currently studying <span class="text-white">web development</span>. Keep scrolling to see the exercises of my learning journey. Who knows, maybe we end up collaborating 😊
@@ -89,7 +90,7 @@
     <section id="modals"> 
         <% for(let project of projects) {%> 
             <div class="modal" tabindex="-1" role="dialog" id="<%=project.id+'-modal'%>">
-                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header border-bottom-0 text-center">
                             <h5 class="modal-title d-"><%= project.title %> </h5>
@@ -152,10 +153,21 @@
         <% }; %> 
     </section>
 
+    <!------------ OUTRO MESSAGE -------------->
+
+    <section id="outro" class="message pt-1 pb-3 py-sm-5 rounded m-sm-0 fix-top-margin">
+        <div class="container-fluid">
+            <p class="m-auto text-center">
+                Currently all the projects have learning purposes only, but new ones with real life use are being cooked  🍳🧂 Stay tuned !
+            </p>
+        </div>
+    </section> 
+
     <!-- FOOTER -->
+
     <footer id="main-footer">
         <div class="container">
-            <div class="text-center py-4">
+            <div class="text-center py-2 py-sm-4">
                 <span class="own-cursive">Marta Bosch </span>
                 <span id="year"></span>
             </div>        

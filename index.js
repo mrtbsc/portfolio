@@ -8,6 +8,13 @@ const path = require("path");
 const markdown = require("markdown-js");
 const fs = require("fs");
 
+// middleware to be able to connect with cloudinary and retrieve the images
+var multer = require("multer");
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+var upload = multer({ dest: "uploads/" });
+
 // associate a templating engine to "res.render()"
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/")); // configure where to get the templates
